@@ -160,7 +160,7 @@
                   div.addEventListener("click", function (ev) {
                       settings.onSelect(item, input);
                       clear();
-                      ev.preventDefault();
+                      //ev.preventDefault(); Commented so that links in custom content get triggered
                       ev.stopPropagation();
                   });
                   if (item === selected) {
